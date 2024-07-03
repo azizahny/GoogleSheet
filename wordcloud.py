@@ -46,8 +46,8 @@ df.replace('', pd.NA, inplace=True)
 print(df.info())
 
 # Set up stopwords in Bahasa Indonesia and English, then join both stopwords
-indonesian_stopwords = stopwords.words('indonesian')
-english_stopwords = stopwords.words('english')
+indonesian_stopwords = set(stopwords.words('indonesian'))
+english_stopwords = set(stopwords.words('english'))
 all_stopwords = stopwords_indonesian.union(stopwords_english)
 
 # If you want to see each stopwords
