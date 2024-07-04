@@ -21,7 +21,7 @@ from collections import defaultdict
 scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
 
 # Add your service account key file, you can adjust your location
-creds = ServiceAccountCredentials.from_json_keyfile_name('credential_keys.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('name_credential_keys.json', scope)
 
 # Authorize the client
 client = gspread.authorize(creds)
