@@ -27,7 +27,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('name_credential_keys.j
 client = gspread.authorize(creds)
 
 # Open the Google Sheet by its name
-spreadsheet = client.open("Playstore Rating 2024")
+spreadsheet = client.open("File Rating")
 
 # Select the targetted sheet
 sheet_name = "Sheet1"
